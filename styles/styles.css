@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400; }
+
+ul, ol {
+  margin: 0;
+  padding: 0; }
+
+.main-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center; }
+  .main-nav__brand {
+    margin-right: auto; }
+    .main-nav__brand img {
+      height: 1.25rem; }
+  .main-nav__items {
+    list-style: none;
+    display: flex; }
+  .main-nav__item {
+    padding: 0.8rem;
+    cursor: pointer; }

@@ -1,0 +1,16 @@
+{
+  "name": "fylo-3",
+  "version": "1.0.0",
+  "description": "Third Fylo Landing",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w styles.scss -o styles --recursive"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
