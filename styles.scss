@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:700');
+
+$primary-1:hsl(243, 86%, 85%);
+$primary-2: hsl(243, 87%, 12%);
+$accent: hsl(163, 95%, 43%);
+$neutral-light:hsl(106, 0%, 98%);
+$neutral-gray: hsl(0, 0%, 50%);
+$neutral-dark: hsl(0, 0%, 17%);
+$padding-general: 0.5rem 3rem;
+
 *,
 *::before,
 *::after {
@@ -19,10 +30,34 @@ body {
 ul, ol {
     margin: 0;
     padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.button {
+    padding: 1rem 2rem;
+    background-color: $accent;
+    color: white;
+    border: none;
+}
+
+.main-section, .sections, .section-info, .cards {
+    padding: $padding-general;
 }
 
 .wrapper {
+    display: grid;
     text-align: center;
+    margin-top: 60px;
+    width: 100%;
 }
 
 .main-nav {
@@ -52,4 +87,101 @@ ul, ol {
         padding: 0.8rem;
         cursor: pointer;
     }
+}
+
+.main-section {
+    
+
+    &__header {
+        background-image: url('../images/illustration-main.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 20rem;
+    }
+}
+
+.sections {
+    background-color: $neutral-light;
+}
+
+.cards {
+    display: grid;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid red;
+    padding: 0.5rem;
+    height: 11rem;
+    width: 8rem;
+    margin-bottom: 1rem;
+
+    &-logo {
+        width: 100%;
+    }
+
+    &-text {
+        font-size: 0.6rem;
+        color: $neutral-gray;
+    }
+}
+
+.footer {
+    background-color: $primary-2;
+    color: white;
+    padding: 2rem 1rem; 
+
+    &-logo path{
+        fill: white;
+    }
+
+    &-newsletter-text {
+        line-height: 1.5;
+    }
+
+    &-newsletter-form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    
+    &-newsletter-subscribe__input {
+        border: 0;
+        padding: 1rem 1rem;
+        border-radius: 3px;
+    }
+    
+    &-newsletter-subscribe__button {
+        width: 40%;
+        align-self: flex-end;
+        padding: 1rem 1rem;
+        border-radius: 3px;
+        box-shadow: 0px 0px 0px;
+        margin-top: 1rem;
+    }
+
+    &-contact {
+        margin: 1rem 0;
+
+        &-email-phone {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+
+           img {
+                height: 100%;
+                margin-right: 0.8rem;
+            }
+        }
+    }
+
+    &-link {
+        cursor: pointer;
+        padding: 0.2rem 0;
+        opacity: 0.8;
+    }
+    
+    
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:700");
 *,
 *::before,
 *::after {
@@ -15,10 +17,31 @@ body {
 
 ul, ol {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif; }
+
+.button {
+  padding: 1rem 2rem;
+  background-color: #05d69b;
+  color: white;
+  border: none; }
+
+.main-section, .sections, .section-info, .cards {
+  padding: 0.5rem 3rem; }
 
 .wrapper {
-  text-align: center; }
+  display: grid;
+  text-align: center;
+  margin-top: 60px;
+  width: 100%; }
 
 .main-nav {
   width: 100%;
@@ -39,3 +62,67 @@ ul, ol {
   .main-nav__item {
     padding: 0.8rem;
     cursor: pointer; }
+
+.main-section__header {
+  background-image: url("../images/illustration-main.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20rem; }
+
+.sections {
+  background-color: #fafafa; }
+
+.cards {
+  display: grid;
+  justify-content: center; }
+
+.card {
+  border: 1px solid red;
+  padding: 0.5rem;
+  height: 11rem;
+  width: 8rem;
+  margin-bottom: 1rem; }
+  .card-logo {
+    width: 100%; }
+  .card-text {
+    font-size: 0.6rem;
+    color: gray; }
+
+.footer {
+  background-color: #070439;
+  color: white;
+  padding: 2rem 1rem; }
+  .footer-logo path {
+    fill: white; }
+  .footer-newsletter-text {
+    line-height: 1.5; }
+  .footer-newsletter-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem; }
+  .footer-newsletter-subscribe__input {
+    border: 0;
+    padding: 1rem 1rem;
+    border-radius: 3px; }
+  .footer-newsletter-subscribe__button {
+    width: 40%;
+    align-self: flex-end;
+    padding: 1rem 1rem;
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px;
+    margin-top: 1rem; }
+  .footer-contact {
+    margin: 1rem 0; }
+    .footer-contact-email-phone {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0; }
+      .footer-contact-email-phone img {
+        height: 100%;
+        margin-right: 0.8rem; }
+  .footer-link {
+    cursor: pointer;
+    padding: 0.2rem 0;
+    opacity: 0.8; }
