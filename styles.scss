@@ -48,6 +48,7 @@ h6 {
     background-color: $accent;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 .main-section, .sections, .section-info, .cards {
@@ -197,5 +198,41 @@ h6 {
         opacity: 0.8;
     }
     
-    
+}
+
+@media (min-width: 40rem) {
+    .main-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        &__header {
+            order: 2;
+        }
+    }
+
+    .sections {
+        display: flex;
+        flex-direction: column;
+
+        .section-info__title {
+            font-size: 2rem;
+        }
+
+        .section-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+
+    .sec-card__container {
+        display: flex;
+        align-items: center;
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
 }
