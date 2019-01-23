@@ -15,7 +15,8 @@ body {
   font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 400; }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -36,7 +37,10 @@ h6 {
   border: none;
   cursor: pointer; }
 
-.main-section, .sections, .section-info, .cards {
+.main-section,
+.sections,
+.section-info,
+.cards {
   padding: 0.5rem 3rem; }
 
 .wrapper {
@@ -152,7 +156,17 @@ h6 {
       justify-content: space-around; }
   .sec-card__container {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: space-between; }
+    .sec-card__container .section-info {
+      text-align: left;
+      width: 50vw; }
     .sec-card__container .cards {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); } }
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px; }
+  .section-info {
+    width: 50vw;
+    margin: 2.5rem auto; }
+  .start-section {
+    align-self: center; } }
