@@ -43,6 +43,9 @@ h6 {
 .cards {
   padding: 0.5rem 3rem; }
 
+.section-info__text {
+  color: gray; }
+
 .wrapper {
   display: grid;
   text-align: center;
@@ -76,6 +79,12 @@ h6 {
   background-position: center;
   height: 20rem; }
 
+.main-section__intro--title {
+  font-size: 1.5rem; }
+
+.main-section__intro--text {
+  color: gray; }
+
 .sections {
   background-color: #fafafa; }
 
@@ -103,7 +112,7 @@ h6 {
 .footer {
   background-color: #070439;
   color: white;
-  padding: 2rem 1rem; }
+  padding: 2rem; }
   .footer-logo path {
     fill: white; }
   .footer-newsletter-text {
@@ -142,9 +151,12 @@ h6 {
   .main-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center; }
+    align-items: center;
+    margin: 2rem; }
     .main-section__header {
       order: 2; }
+    .main-section__intro {
+      text-align: left; }
   .sections {
     display: flex;
     flex-direction: column; }
@@ -154,6 +166,8 @@ h6 {
       display: flex;
       align-items: center;
       justify-content: space-around; }
+      .sections .section-container .section-title {
+        width: 13rem; }
   .sec-card__container {
     display: flex;
     align-items: center;
@@ -169,4 +183,13 @@ h6 {
     width: 50vw;
     margin: 2.5rem auto; }
   .start-section {
-    align-self: center; } }
+    align-self: center; }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .footer-logo {
+      grid-column: 1 / -1; }
+    .footer nav {
+      display: flex;
+      width: 20rem;
+      justify-content: space-between; } }

@@ -59,6 +59,10 @@ h6 {
     padding: $padding-general;
 }
 
+.section-info__text {
+    color: $neutral-gray;
+}
+
 .wrapper {
     display: grid;
     text-align: center;
@@ -98,6 +102,7 @@ h6 {
 
 .main-section {
 
+    
 
     &__header {
         background-image: url('../images/illustration-main.svg');
@@ -106,6 +111,19 @@ h6 {
         background-position: center;
         height: 20rem;
     }
+
+    &__intro {
+
+        &--title {
+            font-size: 1.5rem;
+        }
+
+        &--text {
+            color: $neutral-gray;
+        }
+    }
+
+  
 }
 
 .sections {
@@ -149,7 +167,7 @@ h6 {
 .footer {
     background-color: $primary-2;
     color: white;
-    padding: 2rem 1rem;
+    padding: 2rem;
 
     &-logo path {
         fill: white;
@@ -209,9 +227,14 @@ h6 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
+        margin: 2rem;
 
         &__header {
             order: 2;
+        }
+
+        &__intro {
+            text-align: left;
         }
     }
 
@@ -227,6 +250,10 @@ h6 {
             display: flex;
             align-items: center;
             justify-content: space-around;
+
+            .section-title {
+                width: 13rem; 
+            }
         }
     }
 
@@ -254,5 +281,20 @@ h6 {
 
     .start-section {
         align-self: center;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        &-logo {
+            grid-column: 1 / -1;
+        }
+
+        nav {
+            display: flex;
+            width: 20rem;
+            justify-content: space-between;
+        }
     }
 }
