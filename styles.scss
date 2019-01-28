@@ -45,7 +45,9 @@ h6 {
 }
 
 .button {
-    padding: 1rem 2rem;
+    padding: 0.8rem 3rem;
+    border-radius: 3px;
+    height: 2.5rem;
     background-color: $accent;
     color: white;
     border: none;
@@ -102,7 +104,6 @@ h6 {
 
 .main-section {
 
-    
 
     &__header {
         background-image: url('../images/illustration-main.svg');
@@ -123,7 +124,7 @@ h6 {
         }
     }
 
-  
+
 }
 
 .sections {
@@ -168,6 +169,7 @@ h6 {
     background-color: $primary-2;
     color: white;
     padding: 2rem;
+    width: 100%;
 
     &-logo path {
         fill: white;
@@ -196,6 +198,7 @@ h6 {
         border-radius: 3px;
         box-shadow: 0px 0px 0px;
         margin-top: 1rem;
+        height: 100%;
     }
 
     &-contact {
@@ -241,6 +244,7 @@ h6 {
     .sections {
         display: flex;
         flex-direction: column;
+        // transform: rotate(25deg);
 
         .section-info__title {
             font-size: 2rem;
@@ -252,7 +256,7 @@ h6 {
             justify-content: space-around;
 
             .section-title {
-                width: 13rem; 
+                width: 13rem;
             }
         }
     }
@@ -285,16 +289,40 @@ h6 {
 
     .footer {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 1.5rem;
 
         &-logo {
             grid-column: 1 / -1;
         }
 
-        nav {
+        &-newsletter {
+
+            &-form {
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+            }
+
+            &-subscribe__input {
+                width: 60%;
+                margin-right: 0.5rem;
+            }
+
+            &-subscribe__button {
+                margin: 0;
+            }
+        }
+
+        &-nav {
             display: flex;
-            width: 20rem;
-            justify-content: space-between;
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 3.1875rem;
+        }
+
+        &-link__title {
+            margin-top: 0;
         }
     }
 }
