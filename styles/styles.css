@@ -37,7 +37,13 @@ h6 {
   background-color: #05d69b;
   color: white;
   border: none;
-  cursor: pointer; }
+  box-shadow: 1px 2px 2px gray;
+  cursor: pointer;
+  transition: all 0.3s ease-out; }
+  .button:hover {
+    box-shadow: 1px 3px 6px gray; }
+  .button:active {
+    box-shadow: 0 0 0; }
 
 .main-section,
 .sections,
@@ -183,6 +189,8 @@ h6 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 10px; }
+      .sec-card__container .cards .card {
+        margin-bottom: 0; }
   .section-info {
     width: 50vw;
     margin: 2.5rem auto; }

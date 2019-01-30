@@ -51,7 +51,17 @@ h6 {
     background-color: $accent;
     color: white;
     border: none;
+    box-shadow: 1px 2px 2px $neutral-gray;
     cursor: pointer;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        box-shadow: 1px 3px 6px $neutral-gray;
+    }
+
+    &:active {
+        box-shadow: 0 0 0;
+    }
 }
 
 .main-section,
@@ -221,6 +231,8 @@ h6 {
         cursor: pointer;
         padding: 0.2rem 0;
         opacity: 0.8;
+
+       
     }
 
 }
@@ -274,7 +286,12 @@ h6 {
         .cards {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10px;
+            grid-gap: 10px;  
+
+            .card {
+                margin-bottom: 0;
+            }
+
         }
     }
 
