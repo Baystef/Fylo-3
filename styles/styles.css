@@ -94,7 +94,19 @@ h6 {
   color: gray; }
 
 .sections {
-  background-color: #fafafa; }
+  position: relative;
+  margin: 4rem; }
+  .sections::before {
+    content: '';
+    position: absolute;
+    width: 108%;
+    height: 118%;
+    top: 5%;
+    left: -5%;
+    z-index: -1;
+    background-color: #fafafa;
+    transform: rotate(12deg);
+    border-radius: 50px; }
 
 .cards {
   display: grid;

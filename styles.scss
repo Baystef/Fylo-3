@@ -138,7 +138,22 @@ h6 {
 }
 
 .sections {
-    background-color: $neutral-light;
+    position: relative;
+    margin: 4rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 108%;
+        height: 118%;
+        top: 5%;
+        left: -5%;
+        z-index: -1;
+        background-color: $neutral-light;
+        transform: rotate(12deg);
+        border-radius: 50px;
+
+    }
 }
 
 .cards {
