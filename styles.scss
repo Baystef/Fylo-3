@@ -103,13 +103,26 @@ h6 {
     &__items {
         list-style: none;
         display: flex;
-        
+        font-size: 0.8rem;
+        color: white;        
     }
 
     &__item {
-        // color: white;
+       
         padding: 0.8rem;
         cursor: pointer;
+
+        &:nth-child(2) {
+            background: $accent;
+            border-radius: 3px;
+            padding: 0.8rem 1.5rem;
+            transition: all 0.2s ease-out;
+
+            &:hover {
+                background: #ffffff;
+                color: $accent;
+            }
+        }
     }
 }
 
@@ -123,10 +136,10 @@ h6 {
         background-image: url('../images/bg-intro-mobile.svg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100%;
-        width: 50%;
+        height: 50%;
+        width: 60%;
         right: 0;
-        top: 3%;
+        top: -5%;
     }
 
     &__header {
@@ -166,8 +179,8 @@ h6 {
         z-index: -1;
         padding: 2rem;
         background-color: $neutral-light;
-        transform: rotate(8deg);
-        border-top-left-radius: 80px;
+        transform: rotate(9deg);
+        border-top-left-radius: 150px;
         border-bottom-right-radius: 20px;
     }
 }
@@ -183,6 +196,11 @@ h6 {
         margin-bottom: 1rem;
         box-shadow: 2px 2px 5px $neutral-gray;
         border-radius: 5px;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+            box-shadow: 3px 6px 10px $neutral-gray, -3px 6px 10px $neutral-gray;
+        }
 
         &-logo {
             width: 100%;
@@ -210,6 +228,7 @@ h6 {
     color: white;
     padding: 2rem;
     width: 100%;
+    margin-top: 2rem;
 
     &-logo path {
         fill: white;
@@ -272,10 +291,14 @@ h6 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
+        height: 450px;
         margin: 2rem;
 
         &::before {
             background-image: url('../images/bg-intro-desktop.svg');
+            top: -30%;
+            right: -10%;
+            height: 915px;
         }
 
         &__header {
@@ -296,7 +319,7 @@ h6 {
             height: 118%;
             top: 5%;
             left: -5%;
-            transform: rotate(12deg);
+            transform: rotate(13deg);
             border-radius: 50px;
         }
 
@@ -328,30 +351,12 @@ h6 {
         .cards {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10px;  
+            grid-gap: 10px; 
+            grid-template-rows: auto;
+            
 
             .card {
                 margin-bottom: 0;
-            }
-
-            .card-1 {
-                grid-area: card-1;
-            }
-
-            .card-2 {
-                
-            }
-            .card-3 {
-
-            }
-            .card-4 {
-
-            }
-            .card-5 {
-
-            }
-            .card-6 {
-
             }
 
         }
